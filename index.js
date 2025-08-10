@@ -3,6 +3,13 @@ const { Client,AttachmentBuilder ,GatewayIntentBits } = require('discord.js');
 const mongoose = require('mongoose');
 const QRCode = require('qrcode');
 const QrCode = require('./models/QRModel');
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => res.send("Bot is running!"));
+app.listen(process.env.PORT , () => {
+  console.log(`Web server running on port ${process.env.PORT}`);
+});
 
 const client = new Client({
     intents: [
