@@ -1,0 +1,19 @@
+{
+  "name": "QRCode-Discord-Bot",
+  "version": "1.0.0",
+  "description": "This Discord bot generates QR codes for GitHub repositories, profiles, or files. Simply provide a GitHub link, and it instantly returns a scannable QR code, making it easy to share projects with your team or community.",
+  "license": "ISC",
+  "author": "Umair Khan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1",
+    "mongoose": "^8.17.1",
+    "nodemon": "^3.1.10",
+    "qrcode": "^1.5.4"
+  }
+}
